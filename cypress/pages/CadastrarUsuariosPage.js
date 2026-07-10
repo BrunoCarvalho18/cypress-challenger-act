@@ -21,9 +21,9 @@ class CadastrarUsuariosPage {
       .type(email)
     }
 
-    fillSenha(senha) {
+    fillSenha(password) {
     cy.get(CadastrarUsuariosElements.fieldSenha())
-      .type(senha)
+      .type(password)
     }
 
     clickbuttonCadastrar() {
@@ -37,7 +37,7 @@ class CadastrarUsuariosPage {
 
       this.fillEmail(user.email)
 
-      this.fillSenha(user.senha)
+      this.fillSenha(user.password)
 
       this.clickbuttonCadastrar()
     }

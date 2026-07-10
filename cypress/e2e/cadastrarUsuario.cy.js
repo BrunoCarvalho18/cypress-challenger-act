@@ -5,9 +5,9 @@ describe('User Registration', () => {
 
   it('Should register a new user', () => {
 
-     CadastrarUsuariosPage.visit()
+    CadastrarUsuariosPage.visit()
 
-     CadastrarUsuariosPage.clickLinkCadastrarSe() 
+    CadastrarUsuariosPage.clickLinkCadastrarSe() 
 
     CadastrarUsuariosPage.cadastrarUsuario({
       nome: faker.person.fullName(),

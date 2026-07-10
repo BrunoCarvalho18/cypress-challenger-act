@@ -27,3 +27,6 @@
 ## :star:  CI/CD Pipeline
 
 1. Github Actions
+
+<img width="1058" height="524" alt="Screenshot 2026-07-10 at 20 15 20" src="https://github.com/user-attachments/assets/5637a1fa-45f4-4d0a-b2cd-59abb0719af0" />
+

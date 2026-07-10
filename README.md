@@ -23,7 +23,7 @@
 1. Download de project 
 2. git clone https://github.com/BrunoCarvalho18/cypress-challenger-act.git
 3. Run in command line npx cypress run
-4. 
+   
 ## :star:  CI/CD Pipeline
 
 1. Github Actions

@@ -1,14 +1,22 @@
 name: Cypress Tests
+
 on: [push]
+
 jobs:
- Cypress-Test:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Checkout GitCode
-       uses: actions/checkout@v2
- 
-     - name: Run Cypress Test
-       uses: cypress-io/github-action@v4
-       with:
-         command: npx cypress run
-         browser: chrome
+  Cypress-Test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Faker
+        run: npm install @faker-js/faker --save-dev
+
+      - name: Run Cypress Tests
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome

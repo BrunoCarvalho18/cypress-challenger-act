@@ -12,7 +12,7 @@ describe('User Registration', () => {
     CadastrarUsuariosPage.cadastrarUsuario({
       nome: faker.person.fullName(),
       email: faker.internet.email(),
-      senha: faker.internet.password({
+      password: faker.internet.password({
           length: 12,
           memorable: false,
           pattern: /[A-Za-z0-9@#$]/
